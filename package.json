@@ -1,13 +1,12 @@
 {
     "name": "my-express-app",
     "version": "1.0.0",
-    "description": "My Express.js application",
-    "main": "server.js",
     "scripts": {
-      "start": "node server.js"
+      "build": "npx tsc",
+      "start": "node build/start.js"
     },
     "dependencies": {
-      "express": "^4.17.1"
+      "express": "^4.17.1",
+      "typescript": "^4.4.4"
     }
   }
-  
