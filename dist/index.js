@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const path_1 = __importDefault(require("path"));
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3004;
-const jsonsDir = path_1.default.join(__dirname, 'bnbTigerNFTJson');
+const jsonsDir = path_1.default.join(__dirname, '../bnbTigerNFTJson');
 app.get('/', (req, res) => {
     res.send('API Is Working!!');
 });

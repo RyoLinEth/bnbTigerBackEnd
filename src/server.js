@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3004;
 
 const path = require('path');
 
-const jsonsDir = path.join(__dirname, 'bnbTigerNFTJson');
+const jsonsDir = path.join(__dirname, '../bnbTigerNFTJson');
 
 app.get('/', (req, res) => {
     res.send('API Is Working!!');
