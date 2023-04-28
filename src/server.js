@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const cors = require('cors');
+const PORT = process.env.PORT || 3004;
 
 const path = require('path');
 
 const jsonsDir = path.join(__dirname, '../bnbTigerNFTJson');
 
+app.use(cors());
 app.get('/', (req, res) => {
     res.send('API Is Working!!');
 });
