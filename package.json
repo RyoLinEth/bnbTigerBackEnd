@@ -4,11 +4,11 @@
   "description": "My Express.js app",
   "main": "server.js",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "ts-node src/server.ts",
     "build": "tsc",
     "serve": "nodemon server.js",
-    "dev": "concurrently \"npm run build:watch\" \"npm run serve\"",
-    "build:watch": "tsc -w"
+    "dev": "concurrently \"npm run build:watch\" \"npm run start\"",
+    "build:watch": "tsc --watch"
   },
   "keywords": [
     "express",
